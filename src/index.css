@@ -1,0 +1,205 @@
+@font-face {
+  font-family: "Auckland";
+  src: url("font/Auckland\ Hills.ttf") format("truetype");;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Delinda";
+  src: url("font/Delinda\ Agatha.ttf") format("truetype");;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Birds";
+  src: url("font/Birds\ of\ Paradise\ ©\ PERSONAL\ USE\ ONLY.ttf") format("truetype");;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Billon";
+  src: url("font/Ananda\ Black\ Personal\ Use.ttf") format("truetype");;
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Candy";
+  src: url("font/Candy\ Beans.otf") ;
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body{
+  background-color: #000;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+label {
+  font-family: 'Candy', sans-serif;
+  font-size: 2em;
+  text-shadow: 1px 1px 2px  black;
+}
+
+legend {
+  position: relative;
+  z-index: 0; 
+  display: inline-block;
+  width: auto;
+  margin: 0;
+  margin-bottom: 40px;
+  font-family: 'Candy', sans-serif;
+  font-size: 4em;
+  text-shadow: 1px 1px2px black;
+}
+
+legend::before {
+  position: absolute;
+  content: '';
+  width: calc(120% );
+  display: block;
+  
+  height: 40px;
+  z-index:-1;
+  left: -30px;
+  right: -30px;
+  transform: rotate(-1deg);
+  transition: transform .3s ease;
+}
+
+legend:hover::before{
+  transform: rotate(2deg);
+}
+
+form.card{
+  border: none;
+}
+
+.letra {
+  white-space: pre-wrap;
+  font-family: "Candy";
+  font-size: 2.1em;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+h2 {
+  margin-bottom: 2rem;
+  font-family: "Auckland", sans-serif;
+  border-bottom: 3px solid #a864eb;
+  padding-bottom:10px;
+  font-size: .9em;
+}
+.card-body i {
+  font-size: 3rem;
+  margin-right: 3rem;
+}
+
+.fa-facebook {
+  color: #3b5998;
+}
+.fa-twitter {
+  color: #0084b4;
+}
+.fa-lastfm {
+  color: #d51007;
+}
+
+.titulo{
+  text-transform: capitalize;
+  font-size: 4em;
+  letter-spacing: 0.06em;
+  font-family: "Auckland";
+  text-align: center;
+  text-align: left;
+  color:black;
+  text-shadow: 1px 1px 1px rgb(64, 64, 64);
+}
+.entrada{
+  font-family: "Auckland";
+  font-size: 1.9em;
+  color: black;
+
+}
+.contencion{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.boton{
+  color:white;
+  font-size: 1.7em;
+  background-color: #492b6c;
+  border: none;
+ 
+ 
+}
+.header{
+  background-image: url(img/Music_Is_A_Drug-Music_lovers_wallpaper_1366x768.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 1px 26px rgba(13, 2, 16, 0.575),0px 2px 38px rgb(31, 7, 63),0px 2px 48px rgba(8, 4, 49, 0.688);
+}
+.btn-sound{
+  margin-bottom:1em;
+  /* margin-left: -4em; */
+  background-color: #0084b4;
+  color: aliceblue;
+  font-size: 2em;
+  width: 3em;
+}
+
+/* Modal */
+/* Oculta el modal de forma predeterminada */
+.modal {
+  display: block;
+  position: fixed; /* fija la posición del modal */
+  z-index: 1; /* establece la posición del modal sobre otros elementos */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* habilita el desplazamiento si el contenido del modal es más grande que la ventana */
+  background-color: rgba(0, 0, 0, 0.4); /* agrega un fondo oscuro alrededor del modal */
+}
+
+/* Establece estilos para el contenido del modal */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* Establece estilos para el botón de cerrar */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
